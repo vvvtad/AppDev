@@ -1,0 +1,47 @@
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+
+    grid-template-areas: 
+        "contact contact"
+        "skills profile"
+        "references education";
+}
+
+.contact {
+    grid-area: contact;
+    background-color: #272b36;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+}
+.profile {
+    grid-area: profile;
+    padding: 20px;
+    border-radius: 10px;
+}
+.education {
+    grid-area: education;
+    padding: 20px;
+    border-radius: 10px;
+}
+.skills {
+    grid-area: skills;
+    background-color: #464c5f;
+    padding: 20px;
+    border-radius: 10px;
+}
+.references {
+    grid-area: references;
+    background-color: #464c5f;
+    padding: 20px;
+    border-radius: 10px;
+}
