@@ -1,52 +1,73 @@
 html {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    color: whitesmoke;
+    margin-left: 9cm;
+    margin-right: 9cm;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    padding: 20px;
 
     grid-template-areas: 
         "contact contact"
         "skills profile"
         "references education";
+
+    border: 2px solid black;
+}
+
+hr {
+    border: 2px solid;
 }
 
 .contact {
     grid-area: contact;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #272b36;
-    color: whitesmoke;
     padding: 20px;
-    border-radius: 10px;
+}
+
+.info {
+    padding-top: 50px;
 }
 
 .contact h1 {
     color: red
 }
 
+.contact img {
+    width: 7cm;
+    border-radius: 20cm;
+}
+
 .profile {
     grid-area: profile;
     padding: 20px;
+    padding-left: 2cm;
     border-radius: 10px;
+    color: black;
 }
+
 .education {
     grid-area: education;
     padding: 20px;
+    padding-left: 2cm;
     border-radius: 10px;
+    color: black;
 }
 .skills {
     grid-area: skills;
     background-color: #464c5f;
     padding: 20px;
-    border-radius: 10px;
+    padding-left: 2cm;
 }
 .references {
     grid-area: references;
     background-color: #464c5f;
     padding: 20px;
-    border-radius: 10px;
+    padding-left: 2cm;
+    
 }
