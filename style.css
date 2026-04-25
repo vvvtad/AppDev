@@ -23,6 +23,11 @@ html {
     padding: 20px;
     border-radius: 10px;
 }
+
+.contact h1 {
+    color: red
+}
+
 .profile {
     grid-area: profile;
     padding: 20px;
