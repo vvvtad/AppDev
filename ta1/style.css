@@ -1,0 +1,75 @@
+/*MULTIPLICATION TABLE*/
+.red {
+background-color: rgb(255, 109, 124);
+border: 1px solid black;
+}
+
+.yellow {
+background-color: rgb(255, 231, 71);
+border: 1px solid black;
+}
+
+table {
+border: 1px solid black;
+text-align: center;
+}
+
+/*STUDENT REGISTRATION*/
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "title" "title" "title"
+    "school" "school" "school"
+    "expelled" "expelled"
+    "student" "student" "student"
+    "previous" "previous" "previous"
+    "submit" "submit" "submit";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-left: 7cm;
+    width: 50cm;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.school {
+    grid-area: school;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.expelled {
+    grid-area: expelled;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.student {
+    grid-area: student;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.previous {
+    grid-area: previous;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.submit {
+    grid-area: submit;
+    text-align: center;
+    padding: 20px;
+}
