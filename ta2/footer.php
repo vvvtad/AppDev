@@ -6,7 +6,7 @@
 </head>
 <body>
     <footer>
-        <p>> Contact Information</p>
+        <p>Contact Information</p>
         <p>Email: vtxxxx@gmail.com || Contact Number: 123-456-7890</p>
         <p>2024 Resume. All rights reserved.</p>
     </footer>
