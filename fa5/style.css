@@ -1,0 +1,43 @@
+.postcontainer {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.colorcontainer {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.colorcontainer table {
+    width: 100%;
+    text-align: center;
+}
+
+.colorcontainer table th, .colorcontainer table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.resultcontainer table {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.resultcontainer table th, .resultcontainer table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
