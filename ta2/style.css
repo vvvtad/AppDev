@@ -1,3 +1,22 @@
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.menu li {
+    background-color: #54c58d;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
 .container {
   width: 60%;
   margin: auto;
