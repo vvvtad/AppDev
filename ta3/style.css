@@ -1,0 +1,43 @@
+.register {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.register nav {
+    gap: 20px;
+    text-align: center;
+    display: block;
+}
+
+.register nav a {
+    text-decoration: solid;
+    font-size: large;
+    padding-left: 5rem;
+}
+
+.passerror {
+    color: red;
+    font-weight: bold;
+    font-size: small;
+}
+
+.home {
+    text-align: center;
+}
+
+.home a {
+    padding: 1rem;
+    background-color: rgb(226, 39, 39);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    color: rgb(131, 131, 131);
+}
