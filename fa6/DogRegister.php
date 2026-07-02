@@ -22,6 +22,27 @@
             height DECIMAL(5,2),
             weight DECIMAL(5,2)
         )";
+
+        $conn->query($create_table);
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $name = $_POST['name'];
+                $breed = $_POST['breed'];
+                $age = $_POST['age'];
+                $address = $_POST['address'];
+                $color = $_POST['color'];
+                $height = $_POST['height'];
+                $weight = $_POST['weight'];
+
+                $conn->select_db("dog_register");
+                $sql = "INSERT INTO dogs (name, breed, age, address, color, height, weight) VALUES ('$name', '$breed', '$age', '$address', '$color', '$height', '$weight')";
+                
+                if($conn->query($sql) == TRUE){
+                    $message = "Registered successfully!";
+                }else {
+                    $message = "An error occured.";
+                }
+            }  
     ?>
 
     <div class="registercontainer">
@@ -34,7 +55,7 @@
                 <input type="text" name="breed" placeholder="Chow Chow" required>
                 <br><br>
                 <label for="age">Age(in years):</label>
-                <input type="text" name="age" placeholder="2" required>
+                <input type="number" name="age" placeholder="2" required>
                 <br><br>
                 <label for="address">Address:</label>
                 <input type="text" name="address" placeholder="Quezon City" required>
@@ -43,31 +64,17 @@
                 <input type="text" name="color" placeholder="White" required>
                 <br><br>
                 <label for="height">Height(in feet):</label>
-                <input type="text" name="height" placeholder="2 feet" required>
+                <input type="number" name="height" placeholder="2 feet" required>
                 <br><br>
                 <label for="weight">Weight(in kilos):</label>
-                <input type="text" name="weight" placeholder="20" required>
+                <input type="number" name="weight" placeholder="20" required>
                 <br><br>
             <input type="submit" name="submit" value="Register">
+            <br><br>
+            <?php if(!empty($message)) echo $message; ?>
         </form>
 
         <a href="DogView.php">Records</a>
-
-        <?php
-
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $name = $_POST['name'];
-                $breed = $_POST['breed'];
-                $age = $_POST['age'];
-                $address = $_POST['address'];
-                $color = $_POST['color'];
-                $height = $_POST['height'];
-                $weight = $_POST['weight'];
-            }
-
-            $conn->select_db("dog_register");
-            $sql = "INSERT INTO dogs (name, breed, age, address, color, height, weight) VALUES ('$name', '$breed', '$age', '$address', '$color', '$height', '$weight')";
-        ?>
     </div>
 </body>
 </html>
